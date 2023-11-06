@@ -1,0 +1,311 @@
+<script>
+
+    function validateCheckboxes(){
+        var chkList = document.querySelectorAll('input[type="radio"]:checked');
+        if (chkList.length < 20){
+            alert('Error: Make sure all checkboxes are filled out before submitting.');
+            event.preventDefault();
+        }
+        return;
+    }
+    
+</script>
+<div class="container-fluid">
+    <form class="card" style="padding-bottom: 5px;">
+        <div class="card-body">
+            <h2 class="card-title text-center" style="background-color: red; color: white;">Presentation Evaluation</h2>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"><strong>Name of Presenter: </strong></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="text-center">
+                <table class="table table-bordered table-hover">
+                    <thead style="background-color: #FF4F33; color: white">
+                        <tr>
+                            <th style="width: 40%">Presentation Organization</th>
+                            <th style="width: 10%">Strongly Agree</th>
+                            <th style="width: 10%">Agree</th>
+                            <th style="width: 10%">Indifferent</th>
+                            <th style="width: 10%">Disagree</th>
+                            <th style="width: 10%">Strongly Disagree</th>
+                            <th style="width: 10%">Not Applicable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><p>The introduction gave me a clear idea of the topic.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="5"></td>
+                            <td><input type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="4"></td>
+                            <td><input type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="3"></td>
+                            <td><input type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="2"></td>
+                            <td><input type="radio" name="inlineRadioOptions1" id="inlineRadio5" value="1"></td>
+                            <td><input type="radio" name="inlineRadioOptions1" id="inlineRadio6" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The introduction gave me a clear idea of the direction the presentation would take.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="5"></td>
+                            <td><input type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="4"></td>
+                            <td><input type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="3"></td>
+                            <td><input type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="2"></td>
+                            <td><input type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="1"></td>
+                            <td><input type="radio" name="inlineRadioOptions2" id="inlineRadio6" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The presentation presented information in logical, interesting sequence.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="5"></td>
+                            <td><input type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="4"></td>
+                            <td><input type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="3"></td>
+                            <td><input type="radio" name="inlineRadioOptions3" id="inlineRadio4" value="2"></td>
+                            <td><input type="radio" name="inlineRadioOptions3" id="inlineRadio5" value="1"></td>
+                            <td><input type="radio" name="inlineRadioOptions3" id="inlineRadio6" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The conclusion did a good job of summarizing the content of the presentation.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="5"></td>
+                            <td><input type="radio" name="inlineRadioOptions4" id="inlineRadio2" value="4"></td>
+                            <td><input type="radio" name="inlineRadioOptions4" id="inlineRadio3" value="3"></td>
+                            <td><input type="radio" name="inlineRadioOptions4" id="inlineRadio4" value="2"></td>
+                            <td><input type="radio" name="inlineRadioOptions4" id="inlineRadio5" value="1"></td>
+                            <td><input type="radio" name="inlineRadioOptions4" id="inlineRadio6" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Enough essential information was given to allow me to effectively evaluate the topic.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions5" id="inlineRadio1" value="5"></td>
+                            <td><input type="radio" name="inlineRadioOptions5" id="inlineRadio2" value="4"></td>
+                            <td><input type="radio" name="inlineRadioOptions5" id="inlineRadio3" value="3"></td>
+                            <td><input type="radio" name="inlineRadioOptions5" id="inlineRadio4" value="2"></td>
+                            <td><input type="radio" name="inlineRadioOptions5" id="inlineRadio5" value="1"></td>
+                            <td><input type="radio" name="inlineRadioOptions5" id="inlineRadio6" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The presentation was free from irrelevant or filler information.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions6" id="inlineRadio1" value="5"></td>
+                            <td><input type="radio" name="inlineRadioOptions6" id="inlineRadio2" value="4"></td>
+                            <td><input type="radio" name="inlineRadioOptions6" id="inlineRadio3" value="3"></td>
+                            <td><input type="radio" name="inlineRadioOptions6" id="inlineRadio4" value="2"></td>
+                            <td><input type="radio" name="inlineRadioOptions6" id="inlineRadio5" value="1"></td>
+                            <td><input type="radio" name="inlineRadioOptions6" id="inlineRadio6" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The presentation filled the time allotted.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions7" id="inlineRadio1" value="5"></td>
+                            <td><input type="radio" name="inlineRadioOptions7" id="inlineRadio2" value="4"></td>
+                            <td><input type="radio" name="inlineRadioOptions7" id="inlineRadio3" value="3"></td>
+                            <td><input type="radio" name="inlineRadioOptions7" id="inlineRadio4" value="2"></td>
+                            <td><input type="radio" name="inlineRadioOptions7" id="inlineRadio5" value="1"></td>
+                            <td><input type="radio" name="inlineRadioOptions7" id="inlineRadio6" value="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-hover">
+                    <thead style="background-color: #FF4F33; color: white">
+                        <tr>
+                            <th style="width: 40%">Presentation Content</th>
+                            <th style="width: 10%">Strongly Agree</th>
+                            <th style="width: 10%">Agree</th>
+                            <th style="width: 10%">Indifferent</th>
+                            <th style="width: 10%">Disagree</th>
+                            <th style="width: 10%">Strongly Disagree</th>
+                            <th style="width: 10%">Not Applicable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><p>I could easily follow the main points of the presentation.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions8" id="inlineRadio1" value="5"></td>
+                            <td><input type="radio" name="inlineRadioOptions8" id="inlineRadio2" value="4"></td>
+                            <td><input type="radio" name="inlineRadioOptions8" id="inlineRadio3" value="3"></td>
+                            <td><input type="radio" name="inlineRadioOptions8" id="inlineRadio4" value="2"></td>
+                            <td><input type="radio" name="inlineRadioOptions8" id="inlineRadio5" value="1"></td>
+                            <td><input type="radio" name="inlineRadioOptions8" id="inlineRadio6" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The presenter had a clear understanding of the material presented.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions9" id="inlineRadio1" value="5"></td>
+                            <td><input type="radio" name="inlineRadioOptions9" id="inlineRadio2" value="4"></td>
+                            <td><input type="radio" name="inlineRadioOptions9" id="inlineRadio3" value="3"></td>
+                            <td><input type="radio" name="inlineRadioOptions9" id="inlineRadio4" value="2"></td>
+                            <td><input type="radio" name="inlineRadioOptions9" id="inlineRadio5" value="1"></td>
+                            <td><input type="radio" name="inlineRadioOptions9" id="inlineRadio6" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The plans, recommendations and/or conclusions are consistent with the findings</p></td>
+                            <td><input type="radio" name="inlineRadioOptions10" id="inlineRadio1" value="50"></td>
+                            <td><input type="radio" name="inlineRadioOptions10" id="inlineRadio2" value="40"></td>
+                            <td><input type="radio" name="inlineRadioOptions10" id="inlineRadio3" value="30"></td>
+                            <td><input type="radio" name="inlineRadioOptions10" id="inlineRadio4" value="20"></td>
+                            <td><input type="radio" name="inlineRadioOptions10" id="inlineRadio5" value="10"></td>
+                            <td><input type="radio" name="inlineRadioOptions10" id="inlineRadio6" value="00"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Presenter answers all questions with explanations and elaboration.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions11" id="inlineRadio1" value="51"></td>
+                            <td><input type="radio" name="inlineRadioOptions11" id="inlineRadio2" value="41"></td>
+                            <td><input type="radio" name="inlineRadioOptions11" id="inlineRadio3" value="31"></td>
+                            <td><input type="radio" name="inlineRadioOptions11" id="inlineRadio4" value="21"></td>
+                            <td><input type="radio" name="inlineRadioOptions11" id="inlineRadio5" value="11"></td>
+                            <td><input type="radio" name="inlineRadioOptions11" id="inlineRadio6" value="01"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-hover">
+                    <thead style="background-color: #FF4F33; color: white">
+                        <tr>
+                            <th style="width: 40%">Presentation Visuals</th>
+                            <th style="width: 10%">Strongly Agree</th>
+                            <th style="width: 10%">Agree</th>
+                            <th style="width: 10%">Indifferent</th>
+                            <th style="width: 10%">Disagree</th>
+                            <th style="width: 10%">Strongly Disagree</th>
+                            <th style="width: 10%">Not Applicable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><p>The visuals were effective in enhancing the message.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions12" id="inlineRadio1" value="52"></td>
+                            <td><input type="radio" name="inlineRadioOptions12" id="inlineRadio2" value="42"></td>
+                            <td><input type="radio" name="inlineRadioOptions12" id="inlineRadio3" value="32"></td>
+                            <td><input type="radio" name="inlineRadioOptions12" id="inlineRadio4" value="22"></td>
+                            <td><input type="radio" name="inlineRadioOptions12" id="inlineRadio5" value="12"></td>
+                            <td><input type="radio" name="inlineRadioOptions12" id="inlineRadio6" value="02"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The visuals were legible and easy to read.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions13" id="inlineRadio1" value="53"></td>
+                            <td><input type="radio" name="inlineRadioOptions13" id="inlineRadio2" value="43"></td>
+                            <td><input type="radio" name="inlineRadioOptions13" id="inlineRadio3" value="33"></td>
+                            <td><input type="radio" name="inlineRadioOptions13" id="inlineRadio4" value="23"></td>
+                            <td><input type="radio" name="inlineRadioOptions13" id="inlineRadio5" value="13"></td>
+                            <td><input type="radio" name="inlineRadioOptions13" id="inlineRadio6" value="03"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Visuals were free from grammar and formatting errors.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions14" id="inlineRadio1" value="54"></td>
+                            <td><input type="radio" name="inlineRadioOptions14" id="inlineRadio2" value="44"></td>
+                            <td><input type="radio" name="inlineRadioOptions14" id="inlineRadio3" value="34"></td>
+                            <td><input type="radio" name="inlineRadioOptions14" id="inlineRadio4" value="24"></td>
+                            <td><input type="radio" name="inlineRadioOptions14" id="inlineRadio5" value="14"></td>
+                            <td><input type="radio" name="inlineRadioOptions14" id="inlineRadio6" value="04"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The number of visual aids enhanced the presentation.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions15" id="inlineRadio1" value="55"></td>
+                            <td><input type="radio" name="inlineRadioOptions15" id="inlineRadio2" value="45"></td>
+                            <td><input type="radio" name="inlineRadioOptions15" id="inlineRadio3" value="35"></td>
+                            <td><input type="radio" name="inlineRadioOptions15" id="inlineRadio4" value="25"></td>
+                            <td><input type="radio" name="inlineRadioOptions15" id="inlineRadio5" value="15"></td>
+                            <td><input type="radio" name="inlineRadioOptions15" id="inlineRadio6" value="05"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The visuals were displayed for an appropriate time and had no annoying transition effect.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions16" id="inlineRadio1" value="56"></td>
+                            <td><input type="radio" name="inlineRadioOptions16" id="inlineRadio2" value="46"></td>
+                            <td><input type="radio" name="inlineRadioOptions16" id="inlineRadio3" value="36"></td>
+                            <td><input type="radio" name="inlineRadioOptions16" id="inlineRadio4" value="26"></td>
+                            <td><input type="radio" name="inlineRadioOptions16" id="inlineRadio5" value="16"></td>
+                            <td><input type="radio" name="inlineRadioOptions16" id="inlineRadio6" value="06"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-hover">
+                    <thead style="background-color: #FF4F33; color: white">
+                        <tr>
+                            <th style="width: 40%">Presentation Delivery</th>
+                            <th style="width: 10%">Strongly Agree</th>
+                            <th style="width: 10%">Agree</th>
+                            <th style="width: 10%">Indifferent</th>
+                            <th style="width: 10%">Disagree</th>
+                            <th style="width: 10%">Strongly Disagree</th>
+                            <th style="width: 10%">Not Applicable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><p>The presenter spoke clearly, was easily heard, and maintained an appropriate talking rate.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions17" id="inlineRadio1" value="57"></td>
+                            <td><input type="radio" name="inlineRadioOptions17" id="inlineRadio2" value="47"></td>
+                            <td><input type="radio" name="inlineRadioOptions17" id="inlineRadio3" value="37"></td>
+                            <td><input type="radio" name="inlineRadioOptions17" id="inlineRadio4" value="27"></td>
+                            <td><input type="radio" name="inlineRadioOptions17" id="inlineRadio5" value="17"></td>
+                            <td><input type="radio" name="inlineRadioOptions17" id="inlineRadio6" value="07"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The presenter maintained a good posture and made effective use of hand and body gesture.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions18" id="inlineRadio1" value="58"></td>
+                            <td><input type="radio" name="inlineRadioOptions18" id="inlineRadio2" value="48"></td>
+                            <td><input type="radio" name="inlineRadioOptions18" id="inlineRadio3" value="38"></td>
+                            <td><input type="radio" name="inlineRadioOptions18" id="inlineRadio4" value="28"></td>
+                            <td><input type="radio" name="inlineRadioOptions18" id="inlineRadio5" value="18"></td>
+                            <td><input type="radio" name="inlineRadioOptions18" id="inlineRadio6" value="08"></td>
+                        </tr>
+                        <tr>
+                            <td><p>The presenter maintained eye contact with the audience.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions19" id="inlineRadio1" value="59"></td>
+                            <td><input type="radio" name="inlineRadioOptions19" id="inlineRadio2" value="49"></td>
+                            <td><input type="radio" name="inlineRadioOptions19" id="inlineRadio3" value="39"></td>
+                            <td><input type="radio" name="inlineRadioOptions19" id="inlineRadio4" value="29"></td>
+                            <td><input type="radio" name="inlineRadioOptions19" id="inlineRadio5" value="19"></td>
+                            <td><input type="radio" name="inlineRadioOptions19" id="inlineRadio6" value="09"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-hover">
+                    <thead style="background-color: #FF4F33; color: white">
+                        <tr>
+                            <th style="width: 50%">Overall Rating</th>
+                            <th style="width: 10%">Excellent</th>
+                            <th style="width: 10%">Good</th>
+                            <th style="width: 10%">Average</th>
+                            <th style="width: 10%">Poor</th>
+                            <th style="width: 10%">Unsatisfactory</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><p>Overall, how would you rate the quality of this presentation.</p></td>
+                            <td><input type="radio" name="inlineRadioOptions20" id="inlineRadio1" value="50"></td>
+                            <td><input type="radio" name="inlineRadioOptions20" id="inlineRadio2" value="40"></td>
+                            <td><input type="radio" name="inlineRadioOptions20" id="inlineRadio3" value="30"></td>
+                            <td><input type="radio" name="inlineRadioOptions20" id="inlineRadio4" value="20"></td>
+                            <td><input type="radio" name="inlineRadioOptions20" id="inlineRadio5" value="10"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-hover">
+                    <thead style="background-color: red; color: white">
+                        <tr>
+                            <th style="width: 20%">Presentation Organization</th>
+                            <th style="width: 20%">Presentation Content</th>
+                            <th style="width: 20%">Presentation Visuals</th>
+                            <th style="width: 20%">Presentation Delivery</th>
+                            <th style="width: 20%">Overall Grading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><hr>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"><strong>Comments: </strong></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Please share your comments regarding the presentation.">
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-3 mx-auto">
+                <button class="btn btn-dark" type="submit" onclick="validateCheckboxes();">Submit</button>
+            </div>
+        </div>
+    </form>
+    <br><br>
+</div>
+

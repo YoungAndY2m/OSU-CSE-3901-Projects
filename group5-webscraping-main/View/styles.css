@@ -1,0 +1,66 @@
+*{
+    transition: 0.3s;
+}
+
+body{
+    background-image: url("https://ohiostatebuckeyes.com/wp-content/uploads/2021/09/fb-akron-2021-5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1, h4 {
+    text-align: center;
+  }
+
+a{
+    margin: 5px;
+    color: red;
+    text-decoration: none;
+}
+
+  section{
+      margin: 30px;
+      padding: 15px 10px;
+      background-color: rgba(224, 219, 219, 0.651);
+      border-radius: 5px;
+  }
+
+  /* specify height of image to make them uniform */
+  .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+      grid-gap: 30px;
+  }
+
+  .card {
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+    width: 90%;
+    margin: 0.4em;
+    border-radius: 5px;
+    background-color: rgba(250, 235, 215, 0.7);
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.1, 1.05);
+  }
+  .osu_logo, .opponent_logo{
+      width: 100px;
+      object-fit: contain;
+  }
+
+  .container {
+    margin: 3px;
+    border: 2px solid #cf0034;
+    padding: 5px;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }

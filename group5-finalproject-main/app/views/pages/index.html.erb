@@ -1,0 +1,113 @@
+<div class="try" style="width: 100%%; height: 100%;" id = "canvas">
+<div id="snow"></div>
+<div class="container-fluid" style="width:60%;"><br><br><br>
+
+    <h1 class="display-1 text-center" id="welcometext">Welcome</h1><hr>
+    <img src="/assets/index.png" class="img-fluid rounded mx-auto d-block" alt="OSU Logo"><br>
+    <p class="lead text-center" id="welcometext2">
+        This website is the final project completed for CSE 3901, and is meant to serve as a place to view, submit and update information 
+        for the course. You may use the navigation bar above to move to different pages in order to login, view students, teams, and presentation events, and submit
+        evaluations for these events.<br><br><br><br><br>
+    </p>
+</div>
+</div>
+
+<style>
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+
+.try{
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,1), rgba(117, 19, 93, 0.73)),
+    url('assets/ovalorigin.jpg');
+    width: 100%;
+    height: 100%%;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    
+}
+
+#welcometext{
+  text-shadow: 2px 2px 5px black;
+}
+
+#welcometext2{
+  text-shadow: 2px 2px 5px black;
+}
+</style>
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function(){
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+    script.onload = function(){
+        particlesJS("snow", {
+            "particles": {
+                "number": {
+                    "value": 200,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": false,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 5,
+                    "direction": "bottom",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": true,
+                        "rotateX": 300,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    },
+                    "onclick": {
+                        "enable": false
+                    },
+                    "resize": false
+                }
+            },
+            "retina_detect": true
+        });
+    }
+    document.head.append(script);
+});
+    </script>

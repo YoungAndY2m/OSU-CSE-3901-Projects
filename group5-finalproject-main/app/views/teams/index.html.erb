@@ -1,0 +1,48 @@
+<!--Credit: w3schools-->
+<script>
+$(document).ready(function(){
+  $("#searchInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+<% content_for :title, "Teams - Show All" %>
+<div class="container-fluid">
+  <h2 class="text-center">Teams</h2>
+
+  <!-- table search box -->
+  <input type="text" id="searchInput" placeholder="Search table...">
+
+    <div class="card">
+      <table class="table table-striped table-hover" id="myTable">
+        <thead>
+          <tr>
+            <th>Team Name</th>
+            <th colspan="3">Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @teams.each do |team| %>
+            <tr>
+              <td><%= team.team_name %></td>
+              <td><%= link_to 'Show', team %></td>
+              <% if instructor_signed_in? %>
+                <td><%= link_to 'Edit', edit_team_path(team) %></td>
+                <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+               <% end %> 
+          <% end %>
+        </tbody>
+      </table>
+      <br>
+      <% if instructor_signed_in? %>
+        <div class="field text-center btn">
+          <%= link_to 'Add New Team', new_team_path %>
+        </div>
+      <%end%>
+    </div>
+</div>

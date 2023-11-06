@@ -1,0 +1,49 @@
+presentations:
+  - {title: "Architectures for Energy Efficient Computing at Ultra-low Voltages",
+    event: "CALCM Seminar at Carnegie Mellon University",
+    date: "April 2010",
+    link: ""}
+  - {title: "Helping Moore’s Law: Architectural Techniques to Address Parameter Variation",
+    event: "Job talk at George Washington University ECE, Drexel University ECE, Texas A&M ECE, University of Arizona CS, Ohio State CSE and Microsoft Research",
+    date: "2008",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/download/slides/job-talk-teodorescu.pdf"}
+  - {title: "Variation-Aware Application Scheduling and Power Management for Chip Multiprocessors",
+    event: "35th International Symposium on Computer Architecture (ISCA)",
+    date: "June 2008",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/download/slides/radu-isca08-slides.pdf"}
+  - {title: "Mitigating Parameter Variation with Dynamic Fine-Grain Body Bias",
+    event: "International Symposium on Microarchitecture, Chicago",
+    date: "December 2007",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/download/slides/radu-micro-slides.pdf"}
+  - {title: "Mitigating Parameter Variation with Dynamic Fine-Grain Body Bias",
+    event: "Intel PhD Fellowship Forum, Hillsboro, Oregon",
+    date: "October 2007",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/download/slides/dfgbb-intel-forum.pdf"}
+  - {title: "Empowering Software Debugging Through Architectural Support for Program Rollback",
+    event: "Workshop on the Evaluation of Software Defect Detection Tools, in conjunction with PLDI 2005, workshop presentation and demo, Chicago",
+    date: "June 2005",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/download/slides/teodorescu-slides-BUGS05.pdf"}
+  - {title: "The Design Complexity of Program Undo Support in a General-Purpose Processor",
+    event: "Workshop on Complexity-Effective Design, in conjunction with ISCA 2005, workshop presentation, Madison, Wisconsin",
+    date: "June 2005",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/download/slides/teodorescu-slides-WCED05.pdf"}
+  - {title: "Prototyping Architectural Support for Program Rollback Using FPGAs",
+    event: "Illinois Department of Computer Science Affiliates Conference (IDCSA), demo, Urbana, Illinois",
+    date: "April 2005",
+    link: ""}
+  - {title: "Prototyping Architectural Support for Program Rollback Using FPGAs",
+    event: "IEEE Symposium on Field-Programmable Custom Computing Machines, conference presentation, Napa, California",
+    date: "April 2005",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/download/slides/teodorescu-slides-FCCM05.pdf"}
+  - {title: "Prototyping Architectural Support for Program Rollback: An Application to Software Debugging",
+    event: "Workshop on Architecture Research Using FPGA Platforms, in conjunction with HPCA-11, workshop presentation, San Francisco",
+    date: "February 2005",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/download/slides/teodorescu-slides-WARFP05.pdf"}
+  - {title: "Building a Hardware Prototype for Thread Level Speculation using Programmable Logic",
+    event: "Siebel Center Open House, poster and demo, Urbana, Illinois",
+    date: "May 2004",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/download/slides/teodorescu-poster.pdf"}
+  - {title: "Integrated Medical Imaging Environment",
+    event: "IEEE-TTTC International Conference on Automation, Quality and Testing, conference presentation, Cluj-Napoca, Romania",
+    date: "May 2002",
+    link: ""}

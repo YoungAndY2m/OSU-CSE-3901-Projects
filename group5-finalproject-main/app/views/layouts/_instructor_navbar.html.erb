@@ -1,0 +1,27 @@
+<hr>
+<div>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <%= link_to "Dashboard", instructor_home_page_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Students", students_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Presentations", presentation_events_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Teams", teams_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Evaluations", evaluations_path, class:"nav-link" %>
+        </li>
+        <%if Evaluation.all.length!=0%>
+        <li class="nav-item">
+            <%= link_to "Export Data", export_path, class:"nav-link" %>
+        </li>
+        <%end%>
+</div>
+
+
+

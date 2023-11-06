@@ -1,0 +1,10 @@
+<div>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <%= link_to "Task List", student_path(:id=> session[:student_id]), class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Edit Account Information", edit_student_path(:id=> session[:student_id]), class: 'nav-link' %>
+        </li>
+    </ul>
+</div><br>

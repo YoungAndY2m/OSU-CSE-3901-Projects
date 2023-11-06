@@ -1,0 +1,98 @@
+<% content_for :title, "Teams - Team Info" %>
+
+<div class="container-fluid">
+  <h2 class="text-center"><%= @team.team_name  %></h2>
+  <!-- TO DO: Instructor shouldn't be able to evaluate teams' presentations-->
+  <%# <h5 class="text-center"><%= link_to 'Evaluate', team_evaluate_path(:id=> @team.id) %>
+  
+    <div class="card">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Team Members</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @team.students.each do |student| %>
+                <tr><td><%= student.username %></td>
+                </tr>
+                <% end %>
+            </tbody> 
+        </table>
+    </div>
+    <div class="card text-center">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Final Score</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <% if @team.grade != nil %>
+                        <td><%= @team.grade %></td>
+                    <% else %>
+                        <td>Not graded</td>
+                    <% end %>
+                    <% if @team.comment != nil %>
+                        <td><%= @team.comment %></td>
+                    <% else %>
+                        <td>None</td>
+                    <% end %>
+                </tr>
+            </tbody> 
+        </table>
+    </div>
+    <br>
+    <% if instructor_signed_in? %>
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <div class="field">
+                    <div class="mb-3 row">
+                        <%= render 'assign_grade', team: @team %>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    <% end %>
+    <% if instructor_signed_in? || is_member?(current_student, @team)%>
+        <div class="card">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr class="text-center">
+                        <th>Score</th>
+                        <th>Comments</th>
+                        <% if instructor_signed_in? %>
+                            <th>Reviewer</th>
+                        <% end %>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if @evals.length > 0 %>
+                        <% for i in 0...@evals.length%>
+                            <tr class="text-center">
+                                <td><%= @evals[i].grade%></td>
+                                <td><%= @evals[i].comments%></td>
+                                <% if instructor_signed_in? %>
+                                    <td><%= Student.find(@evals[i].student_id).username %></td>
+                                <% end %>
+                            </tr>
+                        <% end %>
+                    <% end %>
+                </tbody> 
+            </table>
+            <% if @evals.length > 0 %>
+                <h2 class="text-center">Average score:
+                <% sum = 0 %>
+                <%@evals.each do |eval| %>
+                    <% sum += eval.grade %>
+                <% end %>
+                <%= sum / @evals.length%></h2>
+            <% else %>
+               <h2 class="text-center">No evaluations</h2>
+            <% end %>
+        </div>
+    <% end %>
+
+</div>

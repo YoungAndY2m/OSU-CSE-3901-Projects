@@ -1,0 +1,167 @@
+---
+title: Publications
+---
+
+<div class="publications">
+    <div>
+        <table style = "width:100%">
+            <caption>Publications</caption>
+            <tr>
+                <th>Title</th>
+                <th>Event</th>
+                <th>Authors</th>
+                <th>Date</th>
+                <th>Link</th>
+            </tr>
+            <% data.publications.publications.each do |pub| %>
+                <tr class="tr-data">
+                    <td><%= pub["title"]%></td>
+                    <td><%= pub["event"]%></td>
+                    <td><%= pub["author"]%></td>
+                    <td><%= pub["date"]%></td>
+                    <td>
+                        <% if pub["link"].length != 0 %>
+                            <a href= "<%= pub["link"]%>">View</a>
+                        <% elsif pub["link"].length == 0 %>
+                            <%= "N/A" %>
+                        <% end %>
+                    </td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
+
+    <hr>
+
+    <div>
+        <table style = "width:100%">
+            <caption>Conference and Journal Articles</caption>
+            <tr>
+                <th>Title</th>
+                <th>Event</th>
+                <th>Authors</th>
+                <th>Date</th>
+                <th>Link</th>
+            </tr>
+            <% data.publications.conference_journal.each do |cj| %>
+                <tr class="tr-data">
+                    <td><%= cj["title"]%></td>
+                    <td><%= cj["event"]%></td>
+                    <td><%= cj["author"]%></td>
+                    <td><%= cj["date"]%></td>
+                    <td>
+                        <% if cj["link"].length != 0 %>
+                            <a href= "<%= cj["link"]%>">View</a>
+                        <% elsif cj["link"].length == 0 %>
+                            <%= "N/A" %>
+                        <% end %>
+                    </td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
+
+    <hr>
+
+    <div>
+        <table style = "width:100%">
+            <caption>Workshop Papers</caption>
+            <tr>
+                <th>Title</th>
+                <th>Event</th>
+                <th>Authors</th>
+                <th>Date</th>
+                <th>Link</th>
+            </tr>
+            <% data.publications.workshop.each do |w| %>
+                <tr class="tr-data">
+                    <td><%= w["title"]%></td>
+                    <td><%= w["event"]%></td>
+                    <td><%= w["author"]%></td>
+                    <td><%= w["date"]%></td>
+                    <td>
+                        <% if w["link"].length != 0 %>
+                            <a href= "<%= w["link"]%>">View</a>
+                        <% elsif w["link"].length == 0 %>
+                            <%= "N/A" %>
+                        <% end %>
+                    </td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
+
+    <hr>
+
+    <div>
+        <table style = "width:100%">
+            <caption>Technical Reports</caption>
+            <tr>
+                <th>Title</th>
+                <th>Event</th>
+                <th>Authors</th>
+                <th>Date</th>
+                <th>Link</th>
+            </tr>
+            <% data.publications.technical_reports.each do |tech| %>
+                <tr class="tr-data">
+                    <td><%= tech["title"]%></td>
+                    <td><%= tech["event"]%></td>
+                    <td><%= tech["author"]%></td>
+                    <td><%= tech["date"]%></td>
+                    <td>
+                        <% if tech["link"].length != 0 %>
+                            <a href= "<%= tech["link"]%>">View</a>
+                        <% elsif tech["link"].length == 0 %>
+                            <%= "N/A" %>
+                        <% end %>
+                    </td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
+
+    <hr>
+
+    <div>
+        <table style = "width:100%">
+            <caption>Thesis</caption>
+            <tr>
+                <th>Degree</th>
+                <th>Title</th>
+                <th>University</th>
+                <th>Date</th>
+                <th>Link</th>
+                <th>Authors</th>
+                <th>Advisor</th>
+                <th>Information</th>
+            </tr>
+            <% data.publications.thesis.each do |t| %>
+                <tr class="tr-data">
+                    <td><%= t["degree"]%></td>
+                    <td><%= t["title"]%></td>
+                    <td><%= t["university"]%></td>
+                    <td><%= t["date"]%></td>
+                    <td>
+                        <% if t["link"].length != 0 %>
+                            <a href= "<%= t["link"]%>">View</a>
+                        <% elsif t["link"].length == 0 %>
+                            <%= "N/A" %>
+                        <% end %>
+                    </td>
+                    <td><%= t["author"]%></td>
+                    <td><%= t["advisor"]%></td>
+                    <td>
+                        <% if t["info"].length != 0 %>
+                            <%= t["info"] %>
+                        <% elsif t["info"].length == 0 %>
+                            <%= "N/A" %>
+                        <% end %>
+                    </td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
+
+    <hr>
+</div>

@@ -1,0 +1,296 @@
+publications:
+  - {title: "Using STT-RAM to Enable Energy-Efficient Near-Threshold Chip Multiprocessors",
+    event: "International Conference on Parallel Architectures and Compilation Techniques (PACT)",
+    date: "August 2014",
+    link: "",
+    author: "Xiang Pan and Radu Teodorescu"}
+
+conference_journal:
+  - {title: "Using Undervolting as an On-Device Defense Against Adversarial Machine Learning Attacks",
+    event: "IEEE International Symposium on Hardware Oriented Security and Trust (HOST)",
+    date: "December 2021",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/resources/IEEE_HOST_2021_paper_74-3.pdf",
+    author: "Saikat Majumdar, Mohammad Hossein Samavatian, Kristin Barber, Radu Teodorescu"}
+  - {title: "IntroSpectre: A Pre-Silicon Framework for Discovery and Analysis of Transient Execution Vulnerabilities",
+    event: "International Symposium on Computer Architecture (ISCA)",
+    date: "June 2021",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/resources/introspectre-isca2021.pdf",
+    author: "Moein Ghaniyoun, Kristin Barber, Yinqian Zhang, Radu Teodorescu"}
+  - {title: "Fused DSConv: Optimizing Sparse CNN Inference for Execution on Edge Devices",
+    event: "IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing, (CCGrid)",
+    date: "May 2021",
+    link: "",
+    author: "Jia Guo, Gagan Agrawal, Radu Teodorescu"}
+  - {title: "RNNFast: An Accelerator for Recurrent Neural Networks Using Domain Wall Memory",
+    event: "ACM Journal on Emerging Technologies in Computing Systems, (JETC)",
+    date: "2020",
+    link: "https://dl.acm.org/doi/fullHtml/10.1145/3399670",
+    author: "Mohammad Samavatian, Anys Bacha, Li Zhou, Radu Teodorescu"}
+  - {title: "A Pattern-Based API for Mapping Applications to a Hierarchy of Multi-Core Devices",
+    event: "IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing (CCGrid)",
+    date: "May 2020",
+    link: "https://ieeexplore.ieee.org/document/9139746",
+    author: "Jia Guo, Radu Teodorescu, Gagan Agrawal"}
+  - {title: "SPEECHMINER: A Framework for Investigating and Measuring Speculative Execution Vulnerabilities",
+    event: "Network and Distributed System Security Symposium (NDSS)",
+    date: "2020",
+    link: "https://www.ndss-symposium.org/ndss-paper/speechminer-a-framework-for-investigating-and-measuring-speculative-execution-vulnerabilities/",
+    author: "Yuan Xiao, Yinqian Zhang, Radu Teodorescu"}
+  - {title: "Adaptive parallel execution of deep neural networks on heterogeneous edge devices",
+    event: "ACM/IEEE Symposium on Edge Computing, (SEC)",
+    date: "2019",
+    link: "https://dl.acm.org/doi/10.1145/3318216.3363312",
+    author: "Li Zhou, Mohammad Samavatian, Anys Bacha, Saikat Majumdar, Radu Teodorescu"}
+  - {title: "SpecShield: Shielding Speculative Data from Microarchitectural Covert Channels",
+    event: "International Conference on Parallel Architectures and Compilation Techniques (PACT)",
+    date: "September 2019",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/resources/papers/specshield_pact2019.pdf",
+    author: "Kristin Barber, Anys Bacha, Li Zhou, Yinqian Zhang, Radu Teodorescu"}
+  - {title: "Isolating Speculative Data to Prevent Transient Execution Attacks",
+    event: "Computer Architecture Letters (CAL)",
+    date: "2019",
+    link: "https://ieeexplore.ieee.org/document/8714070",
+    author: "Kristin Barber, Anys Bacha, Li Zhou, Yinqian Zhang, Radu Teodorescu"}
+  - {title: "C-Graph: A highly efficient concurrent graph reachability query framework",
+    event: "International Conference on Parallel Processing (ICPP)",
+    date: "2018",
+    link: "https://dl.acm.org/doi/10.1145/3225058.3225136",
+    author: "Li Zhou, Ren Chen, Yinglong Xia, Radu Teodorescu"}
+  - {title: "NVCool: When Non-Volatile Caches Meet Cold Boot Attacks",
+    event: "IEEE International Conference on Computer Design (ICCD)",
+    date: "2018",
+    link: "https://ieeexplore.ieee.org/document/8615722",
+    author: "Xiang Pan, Anys Bacha, Spencer Rudolph, Li Zhou, Yinqian Zhang, Radu Teodorescu"}
+  - {title: "Respin: Rethinking Near-Threshold Multiprocessor Design with Non-Volatile Memory",
+    event: "IEEE International Parallel & Distributed Processing Symposium (IPDPS)",
+    date: "May 2017",
+    link: "https://ieeexplore.ieee.org/document/7967116",
+    author: "Xiang Pan, Anys Bacha and Radu Teodorescu"}
+  - {title: "On Using the Roofline Model with Lower Bounds on Data Movement, HiPEAC",
+    event: "European Network on High-performance Embedded Architecture and Compilation",
+    date: "2017",
+    link: "https://dl.acm.org/doi/10.1145/2693656",
+    author: "Venmugil Elango, Naser Sedaghati, Fabrice Rastello, Louis-Noel Pouchet, J. Ramanujam, Radu Teodorescu,P. Sadayappan"}
+  - {title: "Opportunistically Reassigning Power Allocation between Processor and Memory in 3D Stacks",
+    event: "International Symposium on Microarchitecture (MICRO)",
+    date: "October 2016",
+    link: "",
+    author: "Dimitrios Skarlatos, Renji Thomas, Aditya Agrawal, Shibin Qin, Robert Pilawa, Ulya Karpuzcu, Radu Teodorescu, Nam Sung Kim, Josep Torrellas, Snatch"}
+  - {title: "One Bit Flips, One Cloud Flops: Cross-VM Row Hammer Attacks and Privilege Escalation",
+    event: " USENIX Security'16",
+    date: "August 2016",
+    link: "https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_xiao.pdf",
+    author: "Yuan Xiao, Xiaokuan Zhang, Yinqian Zhang, Radu Teodorescu"}
+  - {title: "EmerGPU: Understanding and Mitigating Resonance-Induced Voltage Noise in GPU Architectures",
+    event: "International Symposium on Performance Analysis of Systems and Software (ISPASS)",
+    date: "April 2016 ",
+    link: "http://ieeexplore.ieee.org/document/7482076/",
+    author: "Renji Thomas, Naser Sedaghati, Radu Teodorescu"}
+  - {title: "Core Tunneling: Variation-Aware Voltage Noise Mitigation in GPUs",
+    event: "International Symposium on High-Performance Computer Architecture (HPCA)",
+    date: "March 2016",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/thomas_hpca2016.pdf",
+    author: "Renji Thomas, Kristin Barber, Naser Sedaghati, Li Zhou, Radu Teodorescu"}
+  - {title: "Authenticache: Harnessing Cache ECC for System Authentication",
+    event: "International Symposium on Microarchitecture (MICRO)",
+    date: "December 2015",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/bacha-micro15.pdf",
+    author: "Anys Bacha and Radu Teodorescu"}
+  - {title: "Using ECC Feedback to Guide Voltage Speculation in Low-Voltage Processors",
+    event: "International Symposium on Microarchitecture (MICRO)",
+    date: "December 2014",
+    link: "",
+    author: "Anys Bacha and Radu Teodorescu"}
+  - {title: "NVSleep: Using Non-Volatile Memory to Enable Fast Sleep/Wakeup of Idle Cores",
+    event: "IEEE International Conference on Computer Design (ICCD)",
+    date: "October 2014",
+    link: "",
+    author: "Xiang Pan and Radu Teodorescu"}
+  - {title: "Dynamic Reduction of Voltage Margins by Leveraging On-chip ECC in Itanium II Processors",
+    event: "International Symposium on Computer Architecture (ISCA)",
+    date: "June 2013",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/bacha-isca13.pdf",
+    author: "Anys Bacha and Radu Teodorescu"}
+  - {title: "VRSync: Characterizing and Eliminating Synchronization-Induced Voltage Emergencies in Many-core Processors",
+    event: "International Symposium on Computer Architecture (ISCA)",
+    date: "June 2012",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/vrsync-isca12.pdf",
+    author: "Timothy N. Miller, Renji Thomas, Xiang Pan, Radu Teodorescu"}
+  - {title: "Runtime failure rate targeting for energy-efficient reliability in chip microprocessors",
+    event: " Concurrency and Computation: Practice and Experience (CCPE)",
+    date: "July 2012",
+    link: "http://onlinelibrary.wiley.com/doi/10.1002/cpe.2898/abstract",
+    author: "Timothy Miller, Nagarjuna Surapaneni, Radu Teodorescu"}
+  - {title: "Booster: Reactive Core Acceleration for Mitigating the Effects of Process Variation and Application Imbalance in Low-Voltage Chips",
+    event: "International Symposium on High-Performance Computer Architecture (HPCA)",
+    date: "February 2012",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/booster-hpca12.pdf",
+    author: "Timothy N. Miller, Xiang Pan, Renji Thomas, Naser Sedaghati, Radu Teodorescu"}
+  - {title: "Mitigating the Effects of Process Variation in Ultra-low Voltage Chip Multiprocessors using Dual Supply Voltages and Half-Speed Units",
+    event: "IEEE Computer Architecture Letters (CAL)",
+    date: "2012",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/ntcvar-cal12.pdf",
+    author: "Timothy Miller, Renji Thomas and Radu Teodorescu,"}
+  - {title: "StVEC: A Vector Instruction Extension for High Performance Stencil Computation",
+    event: "International Conference on Parallel Architectures and Compilation Techniques (PACT)",
+    date: "October 2011",
+    link: "",
+    author: "Naser Sedaghati, Renji Thomas, Louis-Noel Pouchet, Radu Teodorescu, P. Sadayappan"}
+  - {title: "Parichute: Generalized Turbocode-Based Error Correction for Near-Threshold Caches",
+    event: "International Symposium on Microarchitecture (MICRO)",
+    date: "December 2010",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/parichute-micro2010.pdf",
+    author: "Timothy Miller, James Dinan, Renji Thomas, Bruce Adcock and Radu Teodorescu"}
+  - {title: "Flexible Error Protection for Energy Efficient Reliable Architectures",
+    event: "International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD), Petrópolis, Brazil",
+    date: "October 2010",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/flexarch-sbac10.pdf",
+    author: "Timothy Miller, Nagarjuna Surapaneni and Radu Teodorescu"}
+  - {title: "Variation-Aware Application Scheduling and Power Management for Chip Multiprocessors",
+    event: "35th International Symposium on Computer Architecture (ISCA)",
+    date: "June 2008",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/teodorescu-ISCA08.pdf",
+    author: "Radu Teodorescu and Josep Torrellas"}
+  - {title: "VARIUS: A Model of Parameter Variation and Resulting Timing Errors for Microarchitects",
+    event: "IEEE Transactions on Semiconductor Manufacturing (IEEE TSM)",
+    date: "February 2008",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/varius-tsm.pdf",
+    author: "Smruti R. Sarangi, Brian Greskamp, Radu Teodorescu, Jun Nakano, Abhishek Tiwari and Josep Torrellas"}
+  - {title: "Mitigating Parameter Variation with Dynamic Fine-Grain Body Biasing",
+    event: "40th International Symposium on Microarchitecture (MICRO)",
+    date: "December 2007",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/dfgbb-micro07.pdf",
+    author: "Radu Teodorescu, Jun Nakano, Abhishek Tiwari and Josep Torrellas"}
+  - {title: "HARD: Hardware-Assisted Lockset-based Race Detection",
+    event: "IEEE International Symposium on High-Performance Computer Architecture (HPCA)",
+    date: "February 2007",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/hard-HPCA07.pdf",
+    author: "Pin Zhou, Radu Teodorescu and Yuanyuan Zhou"}
+  - {title: "SWICH: A Prototype for Efficient Cache-Level Checkpointing and Rollback",
+    event: "IEEE Micro, vol. 26",
+    date: "Sept/Oct, 2006",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/teodorescu-SWICH.pdf",
+    author: "Radu Teodorescu, Jun Nakano, Josep Torrellas"}
+  - {title: "Prototyping Architectural Support for Program Rollback Using FPGAs",
+    event: "IEEE Symposium on Field-Programmable Custom Computing Machines (FCCM)",
+    date: "April 2005",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/teodorescu-FCCM05.pdf",
+    author: "Radu Teodorescu and Josep Torrellas"}
+  - {title: "Integrated Medical Imaging Environment",
+    event: "International Conference on Automation, Quality, and Testing, Robotics",
+    date: "May 2002",
+    link: "",
+    author: "Nedevschi, S., Teodorescu, R., Gyongyi, Z., Nedevschi, S., Jr., Leuca, A. and Olinic, D."}
+  - {title: "Distributed system for medical image acquisition, processing, storage, and retrieval",
+    event: "First RoEduNet Conference",
+    date: "April 2002",
+    link: "",
+    author: "Nedevschi, S., Gyongyi, Z., Teodorescu, R., Nedevschi, S., Jr. and Olinic, D."}
+  - {title: "Retrieval of DICOM ultrasound images based on structured medical description",
+    event: "International Conference on Emerging Telecommunications Technologies and Applications",
+    date: "October 2001",
+    link: "",
+    author: "Nedevschi, S., Salomie, I., Gyongyi, Z., Teodorescu, R., Nedevschi, S., Jr. and Olinic, D."}
+  - {title: "E-environment for medical image processing",
+    event: "Electronic Business on the Internet",
+    date: "October 2001",
+    link: "",
+    author: "Nedevschi, S., Gyongyi, Z., Teodorescu, R., Nedevschi, S., Jr. and Olinic, D."}
+  - {title: "Feature based retrieval of echocardiographic images using DICOM structured reporting",
+    event: "IEEE Computers in Cardiology",
+    date: "September 2001",
+    link: "",
+    author: "Nedevschi, S., Olinic, D., Gyongyi, Z., Teodorescu, R. and Nedevschi, S., Jr."}
+
+workshop:
+  - {title: "Distributing Deep Neural Networks with Containerized Partitions at the Edge",
+    event: "HotEdge '19 Workshop at 2019 USENIX Annual Technical Conference",
+    date: "2019",
+    link: "https://www.usenix.org/conference/hotedge19/presentation/zhou",
+    author: "Li Zhou, Hao Wen, Radu Teodorescu, David H.C. Du"}
+  - {title: "Mitigating the Effects of Process Variation in Ultra-low Voltage Chip Multiprocessors using Dual Supply Voltages and Half-Speed Stages",
+    event: "Workshop on Energy-Efficient Design, in conjunction with ISCA",
+    date: "June 2011",
+    link: "",
+    author: "Timothy Miller, Renji Thomas and Radu Teodorescu"}
+  - {title: "Flexible Redundancy in Robust Processor Architecture",
+    event: "Workshop on Energy-Efficient Design (WEED), in conjunction with ISCA",
+    date: "June 2009",
+    link: "",
+    author: "Timothy Miller, Nagarjuna Surapaneni, Radu Teodorescu and Joanne Degroat"}
+  - {title: "VARIUS: A Model of Parameter Variation and Resulting Timing Errors for Microarchitects",
+    event: "Workshop on Architectural Support for Gigascale Integration (ASGI), in conjunction with ISCA",
+    date: "June 2007",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/teodorescu-varius.pdf",
+    author: "Radu Teodorescu, Brian Greskamp, Jun Nakano, Smruti R. Sarangi, Abhishek Tiwari and Josep Torrellas"}
+  - {title: " Log-Based Architectures for Continuous Monitoring of Deployed Code",
+    event: "Workshop on Architectural and System Support for Improving Software Dependability (ASID)",
+    date: "October 2006",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/lba-ASID.pdf",
+    author: "S. Chen, B. Falsafi, P. B. Gibbons, M. Kozuch, T. C. Mowry, R. Teodorescu, A. Ailamaki, L. Fix, G. R. Ganger, B. Lin, S. W. Schlosser"}
+  - {title: "The Design Complexity of Program Undo Support in a General-Purpose Processor",
+    event: "Workshop on Complexity-Effective Design, in conjunction with ISCA 2005, Madison, Wisconsin",
+    date: "June 2005",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/teodorescu-WCED05.pdf",
+    author: "Radu Teodorescu and Josep Torrellas"}
+  - {title: "Empowering Software Debugging Through Architectural Support for Program Rollback",
+    event: "Workshop on the Evaluation of Software Defect Detection Tools, in conjunction with PLDI 2005, Chicago",
+    date: "June 2005",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/teodorescu-BUGS05.pdf",
+    author: "Radu Teodorescu and Josep Torrellas"}
+  - {title: "Prototyping Architectural Support for Program Rollback: An Application to Software Debugging",
+    event: "Workshop on Architecture Research Using FPGA Platforms, in conjunction with HPCA-11, San Francisco",
+    date: "February 2005",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/teodorescu-WARFP05.pdf",
+    author: "Radu Teodorescu and Josep Torrellas"}
+
+technical_reports:
+  - {title: "Logs and lifeguards: Accelerating dynamic program monitoring",
+    event: "Technical Report IRP-TR-06-05, Intel Research Pittsburgh",
+    date: "May 2006",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/IRP-TR-06-05.pdf",
+    author: "Shimin Chen, Babak Falsafi, Phil Gibbons, M Kozuch, TC Mowry, R Teodorescu, A Ailamaki, L Fix, GR Ganger, SW Schlosser"}
+  - {title: "DICOM Compatible Distributed System for Medical Image Acquisition, Processing, Storage, and Retrieval in Hospital Environments",
+    event: "Technical University of Cluj-Napoca, Romania",
+    date: "TR 34970/2001",
+    link: "",
+    author: "Nedevschi, S., Salomie, I., Nedevschi, S., Jr., Gyongyi, Z. and Teodorescu, R."}
+  - {title: "Research and Application Development in the Domains of Reconfigurable Architectures and Rapid Prototyping",
+    event: "Technical University of Cluj-Napoca, Romania",
+    date: "TR 37118/2000",
+    link: "",
+    author: "Nedevschi, S., Pusztai, K., Cret, O., Nedevschi, S., Jr., Gyongyi, Z., Teodorescu, R. and Balaban, R."}
+  - {title: "Research in the Domain of Reconfigurable Architectures, Development of Teaching Aids and Demonstrative Materials",
+    event: "Technical University of Cluj-Napoca, Romania",
+    date: "TR 33830/1999",
+    link: "",
+    author: "Nedevschi, S., Pusztai, K., Cret, O., Nedevschi, S., Jr., Gyongyi, Z. and Teodorescu, R."}
+
+thesis:
+  - {degree: "Ph.D.",
+    title: "Multilayer Techniques to Address Parameter Variation",
+    university: "University of Illinois at Urbana-Champaign",
+    date: "October 2008",
+    link: "",
+    author: "Radu Teodorescu and Josep Torrellas",
+    advisor: "Josep Torrellas",
+    info: ""}
+  - {degree: "Master",
+    title: "Prototyping Architectural Support for Program Rollback Using Programmable Logic",
+    university: "University of Illinois at Urbana-Champaign",
+    date: "May 2005",
+    link: "http://web.cse.ohio-state.edu/~teodorescu.1/download/papers/teodorescu-MS-thesis.pdf",
+    author: "Radu Teodorescu and Josep Torrellas",
+    advisor: "Josep Torrellas",
+    info: "Winner of the David J. Kuck Outstanding Thesis Award"}
+  - {degree: "Engineer Diploma",
+    title: "DICOM Compliant Structured Reports - Encoding and Communication",
+    university: "Technical University of Cluj-Napoca",
+    date: "June 2002",
+    link: "",
+    author: "Teodorescu Radu and Sergiu Nedevschi",
+    advisor: "Sergiu Nedevschi",
+    info: ""}
+  
+
+ 

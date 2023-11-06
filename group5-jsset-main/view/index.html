@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <script src="./main.js" defer ></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="game" id="game">
+
+        <div id="timer" >Time Left: </div>
+
+        <div class="popup" id="popup"></div>
+
+        <div class="table" id ="table"></div>
+
+        <div class="row" id= "row">
+            <div class="playerPanel col" id="playerPanel"></div>
+
+            <div class="submit col card" id="submit">
+                <audio id="audio" src="./images/submit.wav" autoplay="false" ></audio>
+                <img src="images/submitbutton.png" alt="Submit" onclick="playSound();">
+                <script>
+                function playSound() {
+                      var sound = document.getElementById("audio");
+                      sound.play();
+                      sound.loop=false;
+                  }
+                </script>
+            </div>
+            <div class="hint col card" id="hint" >
+                <audio id="audio2" src="./images/hint.wav" autoplay="false" ></audio>
+                <img src="images/hint.png" alt="Hint" onclick="playSound2();">
+                <script>
+                    function playSound2() {
+                          var sound2 = document.getElementById("audio2");
+                          sound2.play();
+                          sound2.loop=false;
+                      }
+                </script>
+
+            </div>
+            <div class="plus col card" id="plus">
+                <audio id="audio3" src="./images/add.wav" autoplay="false" ></audio>
+                <img src="images/plusicon.png" alt="Plus" onclick="playSound3();">
+                <script>
+                    function playSound3() {
+                          var sound3 = document.getElementById("audio3");
+                          sound3.play();
+                          sound3.loop=false;
+                      }
+                </script>
+            </div>
+        </div>   
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+---
+title: Presentations
+---
+
+
+<div class="cards">
+    <h2>Presentations</h2>
+    <% data.presentations.presentations.each do |p| %>
+        <div class="card">
+            <div class="title">
+                <h4>
+                    <%= p["title"]%>
+                </h4>
+            </div>
+            <div class="event">
+                <p>
+                    <%= p["event"]%>
+                </p>
+            </div>
+            <div class="date">
+                <p>
+                    <%= p["date"]%>
+                </p>
+            </div>
+            <div class="link">
+                <p>
+                    <% if p["link"].length != 0 %>
+                        <a href= "<%= p["link"]%>">View</a>
+                    <% elsif p["link"].length == 0 %>
+                        <%= "" %>
+                    <% end %>
+                </p>
+            </div>
+        </div>
+    <%end%>
+</div>

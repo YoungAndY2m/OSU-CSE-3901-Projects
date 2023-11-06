@@ -1,0 +1,17 @@
+<% content_for :title, "Presentations - Edit Event" %>
+
+<h2 class="text-center">Editing Presentation Event</h2>
+<hr>
+<div class="row">
+  <div class="col-md-6 offset-3">
+      <div class="field">
+        <div class="mb-3 row">
+         <%= render 'form', presentation_event: @presentation_event %>
+        </div>       
+      </div>
+      <div class="filed text-center">
+        <%= link_to 'Show', @presentation_event %> |
+        <%= link_to 'Back', presentation_events_path %>
+      </div>
+    </div>
+</div>

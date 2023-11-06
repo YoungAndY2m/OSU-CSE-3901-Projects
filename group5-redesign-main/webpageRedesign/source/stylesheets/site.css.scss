@@ -1,0 +1,144 @@
+body {
+    background-color: white;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+    /*padding: 18vh 1rem;*/
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: rgba(#000, 0.7);
+    &:focus,
+    &:hover {
+    color: rgba(lightseagreen, 0.6);
+    cursor: pointer!important;
+    }
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+    top: 50px;
+    height: 100vh;
+}
+
+caption {
+    font-size: 2em;
+}
+
+table caption {
+    text-align: left;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px;
+}
+
+.tr-data {
+    background: #eee;
+    &:hover {
+    color: lightseagreen;
+    }
+}
+
+th {
+    height: 50px;
+    background-color: rgb(184, 221, 233);
+}
+
+th:first-child {
+    border-radius:10px 0 0 0;
+}
+
+th:last-child {
+    border-radius:0 10px 0 0;
+}
+
+td {
+    padding: 15px;
+}
+
+hr {
+    margin: 40px 0;
+    border: 0;
+    height: 0; 
+    box-shadow: 0 0 10px 1px lightblue;
+}
+
+#foot { grid-area: ft }
+#contact {grid-area: c}
+
+.wrapper {
+    display: grid;
+    padding: 5px;
+    margin: 1px;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "tp tp tp"
+    "sd c c"
+    "sd ft ft";
+}
+
+
+//Controls text in the lab.html about us
+.about_us_text{
+    text-decoration: none;
+    margin-top: 5px;
+}
+.about_us_text:hover{
+    color: yellowgreen;
+}
+
+.research{
+    break-inside: avoid;
+}
+
+//Controls layout in publications page
+.publications{
+    margin: 40px;
+}
+.index #contact, .index .info, .index h2{
+    position: static;
+    z-index: 1;
+    font-size: large;
+    font-weight: 650;
+}
+.info{
+    margin: 5px;
+    padding: 5rem;
+}
+.index .card{
+    width: 45rem;
+    position: relative;
+    right: -7%;
+}
+.index .history{
+    width: 45rem;
+    position: relative;
+    top: -15%;
+}
+
+.index .teaching{
+    width: 45rem;
+    position: relative;
+    top: -7%;
+}
+
+.index h2{
+    width: 45rem;
+    position: relative;
+    right: -9%;
+}
+
+.index{
+    background-image: url("../images/BrasovTransylvaniaiStock1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

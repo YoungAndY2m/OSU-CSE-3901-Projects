@@ -1,0 +1,9 @@
+<li class='nested-fields'>
+
+  <div class="field">
+    <%= f.label(:id, "Student:") %>
+    <%= f.collection_select :id, Student.order(:id), :id, :username %>
+     <%= link_to_remove_association "Remove this student", f %>
+  </div>
+
+</li>

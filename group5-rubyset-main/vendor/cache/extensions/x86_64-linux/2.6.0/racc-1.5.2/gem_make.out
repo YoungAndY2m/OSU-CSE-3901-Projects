@@ -1,0 +1,22 @@
+current directory: /home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse
+/home/andrews/.rbenv/versions/2.6.6/bin/ruby -I /home/andrews/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210919-7580-1u3ufvb.rb extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" clean
+make[1]: Entering directory '/home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse'
+make[1]: Leaving directory '/home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse'
+
+current directory: /home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR="
+make[1]: Entering directory '/home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse'
+compiling cparse.c
+linking shared-object racc/cparse.so
+make[1]: Leaving directory '/home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse'
+
+current directory: /home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" install
+make[1]: Entering directory '/home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse'
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20210919-7580-fjay6x/racc
+make[1]: Leaving directory '/home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/racc-1.5.2/ext/racc/cparse'

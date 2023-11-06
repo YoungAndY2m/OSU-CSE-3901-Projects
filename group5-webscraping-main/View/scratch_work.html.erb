@@ -1,0 +1,73 @@
+<!-- this page is the template for html page to display -->
+<!doctype html>
+<html lang="en">
+
+  <!-- this CSS makes the images in the cards all display the same size and crops the image rather than stretching -->
+  <style>
+    .card-img-top {
+        width: 100%;
+        height: 20vw;
+        object-fit: cover;
+    }
+  </style>
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title><%= @page_title %></title>
+  </head>
+
+  <body>
+    
+    <div class="content">
+      <h1><%= @page_heading %></h1>
+      <div class="container">
+      
+        <!-- set a counter i so that a new row can be started every 2 cards -->
+        <% i = 0 %>
+        <% @opponents_map.each do |opponent_hash| %>
+          <% if i % 2 == 0 %>
+            <div class="row my-4">
+          <% end %>
+
+          <!-- Bootstrap card using grid structure, as many rows of cards as needed w two columns (for cards) per row -->
+          <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top" src="<%= opponent_hash["opponentLogo"] %>" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Ohio State vs. <b><%= opponent_hash["opponent"].join(" ") %></b></h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Where: <%= opponent_hash["location"].join(" ") %></li>
+                <li class="list-group-item">When: <%= opponent_hash["date"] %></li>
+                <li class="list-group-item">Final Score: <%= opponent_hash["result"].join(" ") %></li>
+              </ul>
+              <!-- TO DO: commented out but could be used if we want to include a link to somewhere
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              -->
+            </div>
+          </div>
+          <!-- end card column -->
+
+          <% if i % 2 == 1 %>
+            </div>
+          <% end %>
+          <% i = i + 1 %>
+        <% end %>
+
+      </div> <!-- end container -->
+    </div> <!-- end content -->
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  </body>
+</html>

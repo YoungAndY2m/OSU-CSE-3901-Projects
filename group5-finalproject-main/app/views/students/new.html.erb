@@ -1,0 +1,16 @@
+<% content_for :title, "Students - New" %>
+
+<h2 class="text-center">New Student</h2>
+<hr>
+<div class="row">
+  <div class="col-md-6 offset-3">
+      <div class="field">
+        <div class="mb-3 row">
+         <%= render 'form', student: @student %> 
+        </div>       
+      </div>
+      <div class="field text-center">
+        <%= link_to 'Back', students_path %>
+      </div>
+</div>
+

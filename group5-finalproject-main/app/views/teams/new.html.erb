@@ -1,0 +1,15 @@
+<% content_for :title, "Teams - New" %>
+
+<h2 class="text-center">New Team</h2>
+<hr>
+<div class="row">
+  <div class="col-md-6 offset-3">
+      <div class="field">
+        <div class="mb-3 row">
+         <%= render 'form', team: @team %>
+        </div>       
+      </div>
+      <div class="field text-center">
+        <%= link_to 'Back', teams_path %>
+      </div>
+</div>

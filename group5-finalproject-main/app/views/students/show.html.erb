@@ -1,0 +1,51 @@
+<% content_for :title, "Students - Student Info" %>
+
+<div class="container-fluid">
+    <h2 class="text-center">Student Information and Task List</h2>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Student Information:</h4>
+            <div class="card-text">
+                <p>
+                    <strong>User:</strong> <%= @student.username %>
+                </p>
+
+                <p>
+                    <strong>Class:</strong>
+                    <span>CSE 3901</span>
+                </p>
+
+                <p>
+                    <strong>Semester:</strong>
+                    <span>Autumn 2021</span>
+                </p>
+
+                <p>
+                    <strong>Task(s):</strong>
+                    <span>Peer Evaluation of Project & Technology</span>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @presentation_events.each do |event| %>
+                <tr>
+                    <td><%= link_to event.event_name, presentation_event_path(event) %></td>
+                    <td><%= event.due %></td>
+                    <td><%= event.status %></td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
+    </div>
+</div>

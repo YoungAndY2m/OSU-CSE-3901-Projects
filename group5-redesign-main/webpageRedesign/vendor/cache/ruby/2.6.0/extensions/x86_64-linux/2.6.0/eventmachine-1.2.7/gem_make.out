@@ -1,0 +1,28 @@
+current directory: /home/andrews/Desktop/cse3091/lab4/group5-redesign/webpageRedesign/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/home/andrews/.rbenv/versions/2.6.6/bin/ruby -I /home/andrews/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20211021-4298-w04j8.rb extconf.rb
+creating Makefile
+
+current directory: /home/andrews/Desktop/cse3091/lab4/group5-redesign/webpageRedesign/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/andrews/Desktop/cse3091/lab4/group5-redesign/webpageRedesign/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+cc1plus: warning: command line option ‘-Wdeclaration-after-statement’ is valid for C/ObjC but not for C++
+cc1plus: warning: command line option ‘-Wimplicit-function-declaration’ is valid for C/ObjC but not for C++
+cc1plus: warning: command line option ‘-Wimplicit-int’ is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1plus: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1plus: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+compiling rubymain.cpp
+cc1plus: warning: command line option ‘-Wdeclaration-after-statement’ is valid for C/ObjC but not for C++
+cc1plus: warning: command line option ‘-Wimplicit-function-declaration’ is valid for C/ObjC but not for C++
+cc1plus: warning: command line option ‘-Wimplicit-int’ is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1plus: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1plus: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+linking shared-object fastfilereaderext.so
+
+current directory: /home/andrews/Desktop/cse3091/lab4/group5-redesign/webpageRedesign/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20211021-4298-qc1xz0

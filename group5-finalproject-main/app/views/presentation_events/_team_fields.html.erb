@@ -1,0 +1,18 @@
+<li class='nested-fields'>
+
+  <div id='teams'>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="teamSelect">Assign Team</label>
+      </div>
+      <select class="team-select" id="teamSelect">
+        <option selected>Choose...</option>
+        <% @teams.each do |team| %>
+          <option value="<%= team.id %>"><%= team.team_name %> </option>
+        <% end %>
+      </select>
+    </div>
+  </div>
+<%= link_to_remove_association "Remove this team", f %>
+
+</li>

@@ -1,0 +1,15 @@
+<% content_for :title, "Teams - Edit Team" %>
+
+<h2 class="text-center">Editing Team</h2>
+<hr>
+<div class="row">
+  <div class="col-md-8 offset-2">
+      <div class="field">
+         <%= render 'form', team: @team %>
+      </div>
+      <div class="field text-center">
+        <%= link_to 'Show', @team %> |
+        <%= link_to 'Back', teams_path %>
+      </div>
+    </div>
+</div>

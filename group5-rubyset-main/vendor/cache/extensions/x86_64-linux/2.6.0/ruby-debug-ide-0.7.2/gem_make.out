@@ -1,0 +1,5 @@
+current directory: /home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/ruby-debug-ide-0.7.2/ext
+/home/andrews/.rbenv/versions/2.6.6/bin/ruby mkrf_conf.rb
+
+current directory: /home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/ruby-debug-ide-0.7.2/ext
+/home/andrews/.rbenv/versions/2.6.6/bin/ruby -rrubygems /home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/gems/rake-13.0.6/exe/rake RUBYARCHDIR\=/home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/extensions/x86_64-linux/2.6.0/ruby-debug-ide-0.7.2 RUBYLIBDIR\=/home/andrews/Desktop/cse3091/lab2A/group5-rubyset/vendor/cache/extensions/x86_64-linux/2.6.0/ruby-debug-ide-0.7.2

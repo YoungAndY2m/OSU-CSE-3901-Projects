@@ -1,0 +1,153 @@
+"pkg-config --exists gl"
+| pkg-config --libs gl
+=> "-lGL\n"
+"gcc -o conftest -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/x86_64-linux -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/backward -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound -I/home/andrews/.rbenv/versions/2.6.6/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -DGOSU_DEPRECATED= -DNDEBUG conftest.c  -L. -L/home/andrews/.rbenv/versions/2.6.6/lib -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L. -L/home/andrews/.rbenv/versions/2.6.6/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L/home/andrews/.rbenv/versions/2.6.6/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -o conftest -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/x86_64-linux -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/backward -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound -I/home/andrews/.rbenv/versions/2.6.6/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -DGOSU_DEPRECATED= -DNDEBUG conftest.c  -L. -L/home/andrews/.rbenv/versions/2.6.6/lib -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L. -L/home/andrews/.rbenv/versions/2.6.6/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L/home/andrews/.rbenv/versions/2.6.6/lib -lruby -lGL -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+| pkg-config --cflags-only-I gl
+=> "\n"
+| pkg-config --cflags-only-other gl
+=> "\n"
+| pkg-config --libs-only-l gl
+=> "-lGL\n"
+package configuration for gl
+cflags: 
+ldflags: 
+libs: -lGL
+
+"pkg-config --exists sdl2"
+| pkg-config --libs sdl2
+=> "-lSDL2\n"
+"gcc -o conftest -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/x86_64-linux -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/backward -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound  -I/home/andrews/.rbenv/versions/2.6.6/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -DGOSU_DEPRECATED= -DNDEBUG  conftest.c  -L. -L/home/andrews/.rbenv/versions/2.6.6/lib -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L. -L/home/andrews/.rbenv/versions/2.6.6/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic      -lGL -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L/home/andrews/.rbenv/versions/2.6.6/lib -lruby -lSDL2 -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+| pkg-config --cflags-only-I sdl2
+=> "-I/usr/include/SDL2\n"
+| pkg-config --cflags-only-other sdl2
+=> "-D_REENTRANT\n"
+| pkg-config --libs-only-l sdl2
+=> "-lSDL2\n"
+package configuration for sdl2
+cflags: -D_REENTRANT
+ldflags: 
+libs: -lSDL2
+
+"pkg-config --exists vorbisfile"
+package configuration for vorbisfile is not found
+"pkg-config --exists openal"
+| pkg-config --libs openal
+=> "-lopenal\n"
+"gcc -o conftest -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/x86_64-linux -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/backward -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound  -I/usr/include/SDL2 -I/home/andrews/.rbenv/versions/2.6.6/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -DGOSU_DEPRECATED= -DNDEBUG  -D_REENTRANT conftest.c  -L. -L/home/andrews/.rbenv/versions/2.6.6/lib -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L. -L/home/andrews/.rbenv/versions/2.6.6/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic       -lGL -lSDL2 -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L/home/andrews/.rbenv/versions/2.6.6/lib -lruby -lopenal -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+| pkg-config --cflags-only-I openal
+=> "-I/usr/include/AL\n"
+| pkg-config --cflags-only-other openal
+=> "\n"
+| pkg-config --libs-only-l openal
+=> "-lopenal\n"
+package configuration for openal
+cflags: 
+ldflags: 
+libs: -lopenal
+
+"pkg-config --exists sndfile"
+package configuration for sndfile is not found
+"pkg-config --exists libmpg123"
+package configuration for libmpg123 is not found
+"pkg-config --exists fontconfig"
+| pkg-config --libs fontconfig
+=> "-lfontconfig -lfreetype\n"
+"gcc -o conftest -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/x86_64-linux -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/backward -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound  -I/usr/include/SDL2 -I/usr/include/AL -I/home/andrews/.rbenv/versions/2.6.6/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -DGOSU_DEPRECATED= -DNDEBUG  -D_REENTRANT  conftest.c  -L. -L/home/andrews/.rbenv/versions/2.6.6/lib -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L. -L/home/andrews/.rbenv/versions/2.6.6/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic        -lGL -lSDL2 -lopenal -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L/home/andrews/.rbenv/versions/2.6.6/lib -lruby -lfontconfig -lfreetype -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+| pkg-config --cflags-only-I fontconfig
+=> "-I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16\n"
+| pkg-config --cflags-only-other fontconfig
+=> "\n"
+| pkg-config --libs-only-l fontconfig
+=> "-lfontconfig -lfreetype\n"
+package configuration for fontconfig
+cflags: 
+ldflags: 
+libs: -lfontconfig -lfreetype
+
+have_library: checking for -lopenal... -------------------- yes
+
+"gcc -o conftest -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/x86_64-linux -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/backward -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound  -I/usr/include/SDL2 -I/usr/include/AL -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/andrews/.rbenv/versions/2.6.6/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -DGOSU_DEPRECATED= -DNDEBUG  -D_REENTRANT   conftest.c  -L. -L/home/andrews/.rbenv/versions/2.6.6/lib -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L. -L/home/andrews/.rbenv/versions/2.6.6/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic         -lGL -lSDL2 -lopenal -lfontconfig -lfreetype -Wl,-rpath,/home/andrews/.rbenv/versions/2.6.6/lib -L/home/andrews/.rbenv/versions/2.6.6/lib -lruby -lopenal  -lGL -lSDL2 -lopenal -lfontconfig -lfreetype -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: 
+15: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for AL/al.h... -------------------- yes
+
+"gcc -E -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/x86_64-linux -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/backward -I/home/andrews/.rbenv/versions/2.6.6/include/ruby-2.6.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound  -I/usr/include/SDL2 -I/usr/include/AL -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/home/andrews/.rbenv/versions/2.6.6/include    -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wrestrict -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC -DGOSU_DEPRECATED= -DNDEBUG  -D_REENTRANT    conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <AL/al.h>
+/* end */
+
+--------------------
+

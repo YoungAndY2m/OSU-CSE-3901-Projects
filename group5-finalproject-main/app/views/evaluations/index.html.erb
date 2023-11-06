@@ -1,0 +1,50 @@
+<!--Credit: w3schools-->
+<script>
+$(document).ready(function(){
+  $("#searchInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+<% content_for :title, "Evaluations - Show All" %>
+
+<div class="container-fluid">
+  <h2 class="text-center">Evaluations</h2>
+  <% if @evaluations.length == 0 %>
+    <% flash.alert = "No evaluation currently submitted. Submit one evaluation to export the data." %>
+  <% end %>
+
+  <!-- table search box -->
+  <input type="text" id="searchInput" placeholder="Search table...">
+
+  <div class="card">
+    <table class="table table-striped table-hover" id="myTable">
+      <thead>
+        <tr>
+          <th>Evaluation received - Team</th>
+          <th>Evaluation submitted - Student</th>
+        </tr>
+      </thead>
+
+    <tbody>
+      <% @evaluations.each do |evaluation| %>
+        <tr>
+          <td><%= Team.find(evaluation.team_id).team_name %></td>
+          <% if instructor_signed_in? %>
+            <td><%= Student.find(evaluation.student_id).username %></td>
+          <% end %>
+          <td><%= link_to 'Show', evaluation %></td>
+          <% if instructor_signed_in? %>
+            <td><%= link_to 'Destroy', evaluation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+    </table>
+    <br>
+  </div>
+</div>

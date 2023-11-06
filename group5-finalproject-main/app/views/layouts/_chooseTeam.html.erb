@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./student.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <title>Student tasks</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <a class="nav-link" aria-curent="page" href="https://www.osu.edu/">The Ohio State University</a>
+        </nav>
+        
+        <div class="container-fluid">
+
+            <h1>Evaluating: <!--<%= eval_proj %>--></h1>
+            <h2>Choose a team to evaluate:</h2>
+
+            <div class="card">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Team Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--<% teams.each do |team| %>-->
+                        <!-- one set of tr will be repeated here, href will have link with get data filled in to pass along info-->
+                        <tr>
+                            <td><a href="#" class="text-dark">Team 1</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="text-dark">Team 2</a></td>
+                        <tr>
+                            <td><a href="#" class="text-dark">Team 3</a></td>
+                        </tr>
+                        <!--<% end %>-->
+                    </tbody>
+                </table>
+            </div>
+        
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,73 @@
+<!-- this page is the template for html page to display -->
+<!doctype html>
+<html lang="en">
+
+  <!-- this CSS makes the images in the cards all display the same size and crops the image rather than stretching -->
+ 
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+    <title><%= @page_title %></title>
+  </head>
+
+  <body>
+    <section>
+        <h1><%= @upcomingMatches.shift %></h1>
+        <div class="cards">
+            <% @upcomingMatches.each do |match| %>
+                <div class="card">
+                    <div class="row">
+                        <div class="column">
+                            <img src="https://btn.com/wp-content/uploads/2013/02/ohiostate.jpeg", alt="OSU Logo" class="osu_logo">
+                        </div>
+                        <div class="column">
+                            <img src="<%= match["opponentLogo"] %>", alt="Opponent Logo" class="opponent_logo">
+                         </div>
+                    </div>
+                    <div class="container">
+                        <h4>Ohio State vs. <b><%= match["opponent"]%></b></h4>
+                        <p>Where: <%= match["location"].join(" ") %></p>
+                        <p>When: <%= match["date"] %></p>
+                        <h4>History Between Both sides</h4>
+                        <p>OSU Wins: <%= match["stats"][0] %></p>
+                        <p>OSU Draws: <%= match["stats"][1] %></p>
+                        <p>OSU Loss: <%= match["stats"][2] %></p>
+                        <% match["recap"].each do |recap| %>
+                            <a href="<%=recap["recapLink"]%>"> <%=recap["date"]%></a><br>
+                        <% end %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </section>
+        <% @pastMatches.each do |section| %>
+        <section>
+        <h1><%= section.shift %></h1>
+        <div class="cards">
+            <% section.each do |match| %>
+                <div class="card">
+                    <div class="row">
+                        <div class="column">
+                            <img src="https://btn.com/wp-content/uploads/2013/02/ohiostate.jpeg", alt="OSU Logo" class="osu_logo">
+                        </div>
+                        <div class="column">
+                            <img src="<%= match["opponentLogo"] %>", alt="Opponent Logo" class="opponent_logo">
+                         </div>
+                    </div>
+                    <div class="container">
+                        <h4>Ohio State vs. <b><%= match["opponent"]%></b></h4>
+                        <p>Where: <%= match["location"].join(" ") %></p>
+                        <p>When: <%= match["date"] %></p>
+                        <a href="<%= match["recap"] %>">View Recap</a>
+                        
+                    </div>
+                </div>
+            <% end %>
+        </div>
+        </section>
+        <% end %>
+  </body>
+</html>

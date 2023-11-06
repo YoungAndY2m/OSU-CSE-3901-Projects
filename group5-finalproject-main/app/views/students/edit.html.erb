@@ -1,0 +1,17 @@
+<% content_for :title, "Students - Edit Info" %>
+
+<h2 class="text-center">Editing Student</h2>
+<hr>
+<div class="row">
+  <div class="col-md-6 offset-3">
+      <div class="field">
+        <div class="mb-3 row">
+         <%= render 'form', student: @student %> 
+        </div>       
+      </div>
+      <div class="filed text-center">
+        <%= link_to 'Show', @student %>
+        <%= link_to 'Destroy', @student, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+</div>

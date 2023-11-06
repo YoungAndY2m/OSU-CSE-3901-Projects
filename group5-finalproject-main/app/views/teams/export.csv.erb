@@ -1,0 +1,5 @@
+<%- headers = ['Team', 'Grade'] -%>
+<%= CSV.generate_line headers %>
+<%- @teams.each do |team| -%>
+  <%= CSV.generate_line([team.data['team_name'], team.grade]) -%>
+<%- end -%>

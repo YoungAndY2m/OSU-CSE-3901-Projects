@@ -1,0 +1,53 @@
+.sidebar_wrapper {
+    position: static;
+    width: 20vw;
+}
+.sidebar{
+    position: fixed;
+    margin-right: 1rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 48px 0 0;
+    padding-top: 48px;
+    background-color: darkcyan;
+    width: 20vw;
+    padding-top: 10rem;
+}
+
+@media (max-width: 765px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+@media (max-height: 500px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+#sidebar{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    background-position: center;
+}
+
+.sidebar-pic img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    border-radius: 60% 60%;
+    object-fit: contain;
+    max-width: 20rem;
+    contain:content;
+}
+
+
+
+

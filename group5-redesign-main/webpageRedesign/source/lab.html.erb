@@ -1,0 +1,82 @@
+---
+title: Computer Architecture Research Lab
+---
+<div class="cards">
+    <h2>News About Us</h2>
+    <div class="card">
+        <% data.research.about_us.each do |p| %>
+            <p class="about_us_text">
+                <b><%= p["date"] + " " %></b>
+                <%= p["event"] %>
+            </p>
+        <%end%>
+        <!--<ul>
+            <% data.research.about_us.each do |p| %>
+                <li>
+                    <a class="about_us_text" href="<%=p["link"]%>">
+                        <%=p["event"] +" "+ p["date"] %>
+                    </a>
+                </li>
+            <%end%>
+        </ul>
+        -->
+    </div>
+    <div class="research">
+        <h2>Research</h2>
+        <div class="card card-research">
+            <div class="subtitle">
+                <h4>
+                    Advances in microprocessor technology have been important engines for growth in the computing industry for decades. 
+                    This continued growth is now challenged by significant roadblocks that include increasingly unreliable technology, strict 
+                    limits on power consumption and the difficulties in developing reliable parallel software for chip multiprocessors. 
+                    We focus on designing architectures that address these challenges on multiple fronts.
+                </h4>
+            </div>
+            <ul>
+                <% data.research.research.each do |p| %>
+                    <li>
+                        <h4 class="about_us_text" >
+                            <%=p["title"]%>
+                        </h4>
+                        <p>
+                            <%=p["information"]%>
+                        </p>
+                    </li>
+                <%end%>
+            </ul>
+        </div>
+    </div>
+    
+    <h2>People</h2>
+    <div class="people-cards">
+        <% data.research.people.each do |p| %>
+            <a href="<%=p["link"]%>">
+                <div class="card card-people">
+                    <p><%= p["name"]%></p>
+                    <p><%= p["degree"]%></p>
+                    <p><%= p["year"]%></p>
+                    <p><%= p["position"]%></p>
+                </div>
+            </a>           
+        <%end%>
+    </div>
+    <h2>Tools and Resources</h2>
+    <div class="card"> 
+        <p>Parameter variation poses a major challenge to high-performance microprocessor 
+        design, negatively impacting a processor’s frequency and leakage power. To study 
+        the impact of variation, as well as stimulate the development of microarchitectural 
+        solutions to reduce its impact, we developed a microarchitecture-level model for 
+        process variation.The current version of the model is VARIUS-v0.1.
+        </p>
+        <% data.research.tools.each do |p| %>
+            <a href= "<%=p["link"]%>">
+                <div class="card">
+                    <p> Title: <%=p["title"]%></p>
+                    <p> Author: <%=p["author"]%></p>    
+                    <p> Event: <%=p["event"]%></p>
+                    <p> Date: <%=p["date"]%></p>
+                </div>
+            </a>           
+        <%end%>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<% content_for :title, "Instructor Dashboard" %>
+
+<div class="container-fluid">
+    <div class="card" style="padding-bottom: 5px;">
+        <div class="card-body">
+            <h2 class="card-title text-center" style="background-color: #b00; color: white;"> Instructor Dashboard</h2>
+            <br>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h2 class="card-title"><%= link_to "Class Roster", students_path %></h2>
+                                <div class="card-text">
+                                    <p>
+                                        <strong>Student List: add/remove students</strong>
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h2 class="card-title"><%= link_to "Presentation Events", presentation_events_path%></h2>
+                                <div class="card-text">
+                                    <p>
+                                        <strong>Presentation List: add/remove presentations  & assign grades</strong>
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h2 class="card-title"><%= link_to "Team Roster", teams_path%></h2>
+                                <div class="card-text">
+                                    <p>
+                                        <strong>Team List: add/remove teams</strong>
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h2 class="card-title"><%= link_to "Evaluations", evaluations_path%></h2>
+                                <div class="card-text">
+                                    <p>
+                                        <strong>Evaluation List: review all evaluations</strong>
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</div>

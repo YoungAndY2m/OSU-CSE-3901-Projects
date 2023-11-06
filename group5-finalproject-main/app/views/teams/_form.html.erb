@@ -1,0 +1,54 @@
+<%= form_with(model: team, local: true) do |form| %>
+  <% if team.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(team.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+      <ul>
+        <% team.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <div class="mb-3 row">
+      <%= form.label :team_name  , class: 'col-sm-2 col-form-label' %>
+      <div class="col-sm-10">
+        <%= form.text_field :team_name , class: 'form-control'%>
+      </div>
+    </div>  
+  </div>
+  <div class="field">
+    <%= form.label(:presentation_event_name, "Presentation Event:") %>
+    <%= form.collection_select :presentation_event_id, PresentationEvent.order(:id), :id, :event_name %>
+  </div>
+  <div id='students'>
+      <p>Team Members</p>
+      
+      <div>
+        <ul id='students-container'>
+          <%= form.fields_for :students do |ff| %>
+            <li class='nested-fields'>
+              <div class="field">
+                <%= ff.label(:id, "Student:") %>
+                <%= ff.collection_select :id, Student.order(:id), :id, :username, {},{ class: "form-control", :disabled => "disabled" } %>
+                <%= link_to_remove_association "Remove this student", ff %>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+        <div class='links'>
+          <%= link_to_add_association 'Add New Student', form, :students,
+              'data-association-insertion-node': 'ul#students-container',
+              'data-association-insertion-method': 'append',
+              force_non_association_create: false %> 
+        </div>
+      </div>
+      
+    </div>
+ 
+  <div class="actions text-center">
+    <%= form.submit"Save Team", class:"btn btn-primary", onclick: "myFunction();"%>
+  </div>
+<% end %>

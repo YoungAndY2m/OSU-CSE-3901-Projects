@@ -1,0 +1,228 @@
+about_us:
+  - {date: "10/17/2019",
+    event: "We were thrilled to organize MICRO-52 in Columbus! A welcome message to attendees from DK Panda and I.",
+    link: "https://www.microarch.org/micro52/"}
+  - {date: "07/01/2019",
+    event: "Congratulations to Dr. Li Zhou on his PhD and new position at Twitter!",
+    link: ""}
+  - {date: "06/01/2017",
+    event: "Congratulations to Dr. Anys Bacha on his new position as an Assistant Professor at University of Michigan-Dearborn.",
+    link: ""}
+  - {date: "04/25/2017",
+    event: "Congratulations to newly minted Dr. Xiang Pan! Enjoy Qualcomm and Austin!",
+    link: ""}
+  - {date: "01/09/2016",
+    event: "Congratulations to Dr. Anys Bacha!",
+    link: ""}
+  - {date: "01/20/2016",
+    event: "Our new paper on voltage noise, EmerGPU: Understanding and Mitigating Resonance-Induced Voltage Noise in GPU Architectures, was accepted at ISPASS 2016.",
+    link: "http://web.cse.ohio-state.edu/~teodores/download/papers/thomas_ispass2016.pdf"}
+  - {date: "11/24/2015",
+    event: "Congratulations to Dr. Renji Thomas on his brand new PhD and good luck on his new career at Intel!",
+    link: ""}
+  - {date: "11/20/2015",
+    event: "Our paper Core Tunneling: Variation-Aware Voltage Noise Mitigation in GPUs was accepted at HPCA 2016 and was nominated for the Best Paper Award. Congratulations Renji and team!",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/thomas_hpca2016.pdf"}
+  - {date: "10/15/2015",
+    event: "Congratulations to Dr. Naser Sedaghati on his new PhD and new job at Imagination Technologies!",
+    link: ""}
+  - {date: "9/05/2015",
+    event: "Our paper “Authenticache: Harnessing Cache ECC for System Authentication” was accepted at MICRO 2015! Aloha!?",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/bacha-micro15.pdf"}
+  - {date: "9/01/2014",
+    event: "Radu was promoted to Associate Professor.",
+    link: ""}
+  - {date: "4/14/2014",
+    event: " Our alumnus, Timothy Miller, PhD ’12, new professor at Binghamton University, was recently awarded the Faculty Early Career Development (CAREER) award. This award supports junior faculty who exemplify the role of teacher-scholars through outstanding research, excellent education and the integration of education and research. Many congratulations Tim!",
+    link: "https://web.cse.ohio-state.edu/~teodorescu.1/arch/styled/oldnews.html"}
+  - {date: "03/05/2013",
+    event: "Our paper on voltage speculation in Itanium processors will appear in ISCA 2013 in June",
+    link: "http://isca2013.eew.technion.ac.il/"}
+  - {date: "01/30/2013",
+    event: "Radu won an NSF CAREER award titled An Integrated Treatment of Voltage Noise and Process Variability in Many-core and GPU Systems with Microarchitectural Solutions.",
+    link: "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1253933&HistoricalAwards=false"}
+  - {date: "12/15/2012",
+    event: "Our team will be part of the DARPA-sponsored “Power Efficiency Revolution for Embedded Computing Technologies” (PERFECT) project that aims to design energy-efficient embedded systems using near-threshold technology.",
+    link: ""}
+  - {date: "12/02/2012",
+    event: "We are helping organize the First Workshop on Near-threshold Computing (WNTC) to be held in conjunction with the International Symposium on Microarchitecture (MICRO) 2012, Vancouver, Canada",
+    link: "http://www.cse.ohio-state.edu/~teodores/workshops/wntc/index.html"}
+  - {date: "06/10/2012",
+    event: "Tim Miller, the first PhD graduate in our group, will join the Department of Computer Science at SUNY Binghamton as an Assistant Professor. Congratulations and best wishes from all of us, Prof. Miller!",
+    link: ""}
+  - {date: "04/27/2012",
+    event: "Congratulations to Tim for successfully defending his PhD thesis. Well done Doctor!",
+    link: ""}
+  - {date: "04/15/2012",
+    event: "Renji will be spending the summer at Intel's Technology for Reliability and Usage group in Hudson, Massachusetts.",
+    link: ""}
+  - {date: "03/02/2012",
+    event: "Our paper on characterizing and eliminating voltage emergencies in many-core processors will appear in ISCA 2012.",
+    link: ""}
+  - {date: "01/12/2012",
+    event: "Tim won our department’s Graduate Student Research Award for 2012! The award if given to two Ph.D. students every year for exceptional research accomplishments. Congratulations!",
+    link: ""}
+  - {date: "11/09/2011",
+    event: "Our paper on reducing variation effects in near-threshold chip multiprocessors was accepted at HPCA 2012. Congratulations team!",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/booster-hpca12.pdf"}
+  - {date: "08/01/2011",
+    event: "Our group received an NSF GOALI grant to support our research on ultra-low power architectures. The project is an academia/industry collaboration between our research group and Mentor Graphics",
+    link: "http://www.mentor.com/"}
+  - {date: "07/14/2011",
+    event: "Congratulations to Tim to successfully defending his Candidacy proposal and to Xiang for passing his Qualifiers through the accelerated option!",
+    link: ""}
+  - {date: "06/17/2011",
+    event: "Congratulations to Naser for having his paper accepted at PACT!",
+    link: ""}
+  - {date: "12/07/2010",
+    event: "Tim delivered a great presentation at MICRO!",
+    link: ""}
+  - {date: "08/17/2010",
+    event: "Our paper on error correction for near-threshold caches was accepted to MICRO 2010. Congratulations to all involved!",
+    link: "http://www.microarch.org/micro43/"}
+  - {date: "07/26/2010",
+    event: "We had a paper accepted to SBAC-PAD 2010. Congratulations to Tim and Naga!",
+    link: ""}
+
+
+people:
+  - {name: "Radu Teodorescu",
+    degree: "Professor",
+    year: "",
+    position: "faculty",
+    link: "http://www.cse.ohio-state.edu/~teodores"}
+  - {name: "Kristin Barber",
+    degree: "PhD Student",
+    year: "",
+    position: "student",
+    link: ""}
+  - {name: "Mohammad Hossein Samavatian",
+    degree: "PhD Student",
+    year: "",
+    position: "student",
+    link: "http://web.cse.ohio-state.edu/~samavati"}
+  - {name: "Saikat Majumdar",
+    degree: "PhD Student",
+    year: "",
+    position: "student",
+    link: ""}
+  - {name: "Moein Ghaniyoun",
+    degree: "PhD Student",
+    year: "",
+    position: "student",
+    link: ""}
+  - {name: "Li Zhou",
+    degree: "PhD",
+    year: "2019",
+    position: "Engineer, Twitter & Group Alumni",
+    link: ""}
+  - {name: "Xiang Pan",
+    degree: "PhD",
+    year: "2017",
+    position: "Senior Engineer, Qualcomm & Group Alumni",
+    link: "https://xiangpan-osu.github.io/"}
+  - {name: "Anys Bacha",
+    degree: "PhD",
+    year: "2016",
+    position: "Assistant Professor, University of Michigan-Dearborn & Group Alumni",
+    link: "https://anysbacha.github.io/"}
+  - {name: "Renji Thomas",
+    degree: "PhD",
+    year: "2015",
+    position: "Power and Performance Engineer, Intel & Group Alumni",
+    link: ""}
+  - {name: "Naser Sedaghati",
+    degree: "PhD",
+    year: "2015",
+    position: "Research Engineer, Imagination Technologie & Group Alumni",
+    link: ""}
+  - {name: "Timothy Miller",
+    degree: "PhD",
+    year: "2012",
+    position: "Assistant Professor, SUNY Binghamton & Group Alumni",
+    link: "http://www.cs.binghamton.edu/~millerti/"}
+  - {name: "Indresh Sira Gururajaprasad",
+    degree: "MS",
+    year: "2017",
+    position: "Group Alumni",
+    link: ""}
+  - {name: "Spencer Rudolph",
+    degree: "MS",
+    year: "2016",
+    position: "Group Alumni",
+    link: ""}
+  - {name: "Razvan Lupusoru",
+    degree: "MS",
+    year: "2011",
+    position: "Engineer, Intel Corp & Group Alumni",
+    link: ""}
+  - {name: "Anushree Dwivedi",
+    degree: "BS",
+    year: "2010",
+    position: "Group Alumni",
+    link: ""}
+  - {name: "Wonjeon Kim",
+    degree: "MS",
+    year: "2010",
+    position: "Group Alumni",
+    link: ""}
+  - {name: "Nagarjuna Surapaneni",
+    degree: "MS",
+    year: "2010",
+    position: "Group Alumni",
+    link: ""}
+
+
+research: 
+  - {title: "Variation-Aware Microprocessor Design",
+    information: "Manufacturing process challenges have caused variation in transistor characteristics such as switching speed and power 
+      consumption. Process variation together with temperature and voltage variations (generally referred to as parameter variations) 
+      are having an increasingly detrimental effect on current and future generations of microprocessors, resulting in lower chip 
+      frequency, higher power consumption and decreased reliability.
+      We investigate architectures that incorporate variation-awareness in the design process as well as in runtime adaptation 
+      and optimization solutions designed to achieve better reliability and energy efficiency in increasingly unpredictable systems."}
+  - {title: "Ultra-low Power Multicore Architectures",
+    information: "Power management in chip multiprocessors continues to be one of the primary concerns for chip designers. With future multicores 
+    expected to have dozens or even hundreds of cores on a single die power demands will far exceed what is safe to deliver to the chip 
+    and practical to dissipate with standard cooling methods. Drastic solutions are needed to ensure future microprocessors will not 
+    hit a power wall that will prevent them from taking full advantage of technology scaling.      Our lab is developing solutions for enabling ultra-low voltage operation of multicore chips in an effort to dramatically 
+    improve energy efficiency of computation."}
+  - {title: "Architectural Solutions for Software Reliability",
+    information: "Software is growing in complexity and becoming increasingly prone to design and implementation errors. Given the current 
+    wide-spread adoption of chip multiprocessors, this problem is only getting worse. Parallel applications are especially hard 
+    to write and debug, being prone to nondeterministic synchronization bugs such as data races.
+    In this project we investigate architectural solutions for making the software more robust by providing software-controlled 
+    hardware primitives that enable efficient runtime monitoring and debugging solutions."}
+
+
+tools: 
+  - {title: "VARIUS: A Model of Parameter Variation and Resulting Timing Errors for Microarchitects",
+    author: "Smruti R. Sarangi, Brian Greskamp, Radu Teodorescu, Jun Nakano, Abhishek Tiwari and Josep Torrellas",
+    event: "IEEE Transactions on Semiconductor Manufacturing (IEEE TSM)",
+    date: "February 2008",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/varius-tsm.pdf",
+    condition: "detailed version"}
+  - {title: "VARIUS: A Model of Parameter Variation and Resulting Timing Errors for Microarchitects",
+    author: "Radu Teodorescu, Brian Greskamp, Jun Nakano, Smruti R. Sarangi, Abhishek Tiwari and Josep Torrellas",
+    event: "Workshop on Architectural Support for Gigascale Integration (ASGI), in conjunction with ISCA",
+    date: "June 2007",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/teodorescu-varius.pdf",
+    condition: "detailed version"}
+  - {title: "Variation-Aware Application Scheduling and Power Management for Chip Multiprocessors",
+    author: "Radu Teodorescu and Josep Torrellas",
+    event: "35th International Symposium on Computer Architecture (ISCA)",
+    date: "June 2008",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/teodorescu-ISCA08.pdf",
+    condition: "referenced"}
+  - {title: "Mitigating Parameter Variation with Dynamic Fine-Grain Body Biasing",
+    author: "Radu Teodorescu, Jun Nakano, Abhishek Tiwari and Josep Torrellas",
+    event: "40th International Symposium on Microarchitecture (MICRO)",
+    date: "December 2007",
+    link: "http://www.cse.ohio-state.edu/~teodores/download/papers/dfgbb-micro07.pdf",
+    condition: "referenced"}
+  - {title: "ReCycle: Pipeline Adaptation to Tolerate Parameter Variation",
+    author: "Abhishek Tiwari, Smruti Sarangi, Josep Torrellas",
+    event: "34th Annual International Symposium on Computer Architecture (ISCA)",
+    date: "June 2007",
+    link: "http://iacoma.cs.uiuc.edu/iacoma-papers/isca07_recycle.pdf",
+    condition: "referenced"}
